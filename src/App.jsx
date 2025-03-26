@@ -3,6 +3,7 @@ import './App.css';
 import BalanceReader from "./BalanceReader";
 import BlockExplorer from "./BlockExplorer";
 import VendingMachine from "./VendingMachine";
+import CustomContract from "./CustomContract";
 
 
 const providerUrl = 'https://sepolia.infura.io/v3/1e11ac60be7f4c6591794cd621239347';
@@ -22,6 +23,7 @@ function App() {
       <BalanceReader provider={provider} />
       <BlockExplorer provider={provider} />
       <VendingMachine provider={provider} />
+      <CustomContract provider={provider} />
     </>
   );
 }
